@@ -39,7 +39,7 @@ c = rbind(dtmTrain[,seq(11,18)] , dtmTest[,seq(10, 17)])
 l.test = c[6533:8402,] #Matching the levels
 l.t = cbind(dtmTest[,seq(1,9)], l.test)
 #train and predict on the test set. 
-rfMod = randomForest(Pop ~ ., mtry = 9, ntree = 15001, nodesize = 17, data = dtmTrain)
+rfMod = randomForest(Pop ~ ., mtry = 7, ntree = 501, nodesize = 7, data = dtmTrain)
 #predRF = predict(rfMod , newdata = l.t , type = 'prob')
 predRF = predict(rfMod , newdata = l.t )
 predRF = specify_decimal(predRF, 7)
