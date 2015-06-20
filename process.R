@@ -10,6 +10,7 @@ library(e1071)
 library(randomForest)
 library(gbm)
 library(MASS)
+library(ggplot2)
 
 
 #set the working directory and read the files.
