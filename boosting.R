@@ -7,11 +7,7 @@ boost.Model = gbm(Pop ~ . , data = boost.train, n.trees = 5000,distribution = 'b
 boost.Pred = predict( boost.Model , newdata = boost.test, n.trees = 5000)
 
 
-
-
-
-
-
+# Looping with different parameter settings
 for( i in 0:4){
   
   spl = sample.split(dtmTrain$Pop , SplitRatio = 0.7)
