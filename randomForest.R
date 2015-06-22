@@ -1,9 +1,7 @@
 #RandomForest regression will be explored. 
 
 
-
-
-#Random Forest. Tune RF
+#Random Forest. Tune RF. try VW also.
 #dtm.rf.train = dtmTrain[,seq(73,80)]
 tuneRF(dtmTrain[,-10], dtmTrain[,10] , ntreeTry = 501, stepFactor = 1.5  ,
        trace = TRUE , plot = TRUE , doBest = FALSE)
